@@ -1,4 +1,4 @@
-export default class MySet {
+module.exports = class MySet {
     #data = [];
 
     constructor(arr) {

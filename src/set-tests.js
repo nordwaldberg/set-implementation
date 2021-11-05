@@ -1,4 +1,5 @@
-import  MySet  from './set.js';
+const MySet = require('./set');
+
 
 const testArr = [1, 1, 2, 3, 4, 5, 5, 6];
 
