@@ -76,15 +76,18 @@ module.exports = class {
         Array.prototype.forEach.call(this.#data, callback, context);
     }
 
-    values() {
-        return this.#data;
+    *values() {
+        const values = this.#data.map(value => value);
+        for (let i = 0; i < values.length; i++) yield values[i];
     }
 
-    keys() {
-        return this.#data;
+    *keys() {
+        const keys = this.#data.map(value => value);
+        for (let i = 0; i < keys.length; i++) yield keys[i];
     }
 
-    entries() {
-        return this.#data.map(value => [value, value]);
+    *entries() {
+        const valuesToEntries = this.#data.map(value => [value, value]);
+        for (let i = 0; i < valuesToEntries.length; i++) yield valuesToEntries[i];
     }
 }

@@ -29,6 +29,23 @@ console.log(' ');
 for (const item of example.entries()) {
     console.log(item); // [ 1, 1 ] [ 2, 2 ] ...
 }
+
+console.log(' ');
+console.log('for...of with keys():');
+console.log(' ');
+
+for (const item of example.keys()) {
+    console.log(item); // 1  2 ...
+}
+
+console.log(' ');
+console.log('for...of with values():');
+console.log(' ');
+
+for (const item of example.values()) {
+    console.log(item); // 1  2...
+}
+
 console.log(' ');
 console.log('set size after clear():');
 console.log(' ');
